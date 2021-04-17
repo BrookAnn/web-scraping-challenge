@@ -12,9 +12,7 @@ def data_scrape():
 
     browser.visit(scrape_site)
 
-    # HTML object
     html = browser.html
-    # Parse HTML with Beautiful Soup
     soup = bs (html, 'html.parser')
     #display (soup)
 
@@ -31,10 +29,9 @@ def data_scrape():
     #find_para
 
     get_pic = "https://spaceimages-mars.com/"
-    browser.visit(get_pic)
-    # HTML object
+    browser.visit(get_pic)  
     html = browser.html
-    # Parse HTML with Beautiful Soup
+
     soup = bs (html, 'html.parser')
 
     #display (soup)
